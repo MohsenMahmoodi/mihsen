@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+void main()
+{
+	int a[1][5], b[1][5], c[1][5];
+	void read(int[][5], int, int);
+	read(a, 1, 5);
+	read(b, 1, 5);
+	void jam(int[][5], int[][5], int[][5], int, int);
+	jam(a, b, c, 1, 5);
+	void chaap(int c[][5], int, int);
+		chaap( c, 1, 5);
+
+
+	_getche();
+}
+
+void read(int a[][5], int , int )
+{
+	for (int i = 0; i < 1; i++)
+		for (int j = 0; j < 5; j++)
+			cin >> a[i][j];
+}
+void jam(int a[][5], int b[][5], int c[][5], int, int)
+{
+	for (int i = 0; i < 1; i++)
+		for (int j = 0; j < 5; j++)
+			c[i][j] = a[i][j] + b[i][j];
+}
+void chaap(int c[][5], int , int )
+{
+	cout << "c:" << "\n";
+	for (int i = 0; i < 1; i++)
+		for (int j = 0; j <5; j++)
+			cout << c[i][j]<<"\t";
+
+}
